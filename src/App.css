@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  width: 550px;
+  height: 855px;
+  border-radius: 9px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 65px;
+  top: 49px;
+  border-radius: 0px;
+}
+
+section{
+  padding: 20px;
+}
+
+nav{
+  
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 36px;
+}
+
+.airbnb_logo{
+  width: 82px;
+  height: 25px;
+  left: 22px;
+  top: 35px;
+}
+
+.Grid_container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Hero_grid{
+  max-width: 400px;
+  align-self: center;
+  
+}
+
+.card-list{
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card{
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  font-size: 12px;
+  position: relative;
+}
+
+.badge_txt{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: #ffffff;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card_img{
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
