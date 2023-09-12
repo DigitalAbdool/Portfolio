@@ -1,26 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import './App.css';
 
-function App() {
+function App(){
+ return(
+  <div>
+    <Navbar />
+  </div>
+ )
 
-  const [count, setCount] = useState(0);
-
-  function add() {
-    setCount(prevCount => prevCount + 1)
-  }
-
-  function minus() {
-    setCount(prevCount => prevCount - 1)
-  }
-  return(
-    <div>
-      <button className='counter-minus' onClick={minus}>-</button>
-      <div className='counter-result'>
-        <h2>{count}</h2>
-      </div>
-      <button className='counter-plus' onClick={add}>+</button>
-    </div>
-  )
 }
+
 
 export default App;

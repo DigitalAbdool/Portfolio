@@ -1,0 +1,151 @@
+
+.navbar {
+    padding: 20px;
+} 
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar-item {
+    margin: 0 10px;
+    position: relative;
+}
+  
+.navbar-link {
+    text-decoration: none;
+    color: #feffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+  .navbar-link:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    color: #666;
+}
+  
+.navbar-img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #feffff;
+}
+
+.username{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tittle{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+  
+.navbar-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    width: 300px;
+    height: 35vh;
+    top: 110%;
+    left: 0;
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+    border: 1px solid #2b7a78;
+    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+}
+
+/*
+.dropdown_fadeIn{
+    animation: fadeInAnimation ease-in-out 0.5s forwards;
+}
+
+
+@keyframes fadeOutAnimation {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        width: 160px;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        width: 240px;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 1;
+        visibility: visible;
+        width: 240px;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        width: 160px;
+    }
+}
+*/
+.none{
+    display: none;
+}
+
+.socials-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.divider{
+    width: 100%;
+    margin: 8px 0 8px 0;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.btns button:hover{
+    cursor: pointer;
+}
+button{
+    height: 40px;
+    padding: 0 16px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    outline: 1px solid #2b7a78;
+    border-radius: 4px;
+    background-color: #3aafa9;
+}
+
+.btns button a{
+    color: #feffff;
+}
+
+
+.navbar-item:hover .navbar-dropdown {
+    display: block;
+}
+  
+  .navbar-dropdown li {
+    margin: 5px 0;
+}
+  
+.navbar-dropdown a {
+    text-decoration: none;
+    color: #333;
+}
+  
